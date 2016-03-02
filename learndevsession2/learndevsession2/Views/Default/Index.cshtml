@@ -15,7 +15,7 @@
 </head>
 <body>
     <header class="container-fluid">
-        <nav class="navbar navbar-inverse">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
             <div>
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -31,8 +31,8 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Courses</a></li>
-                        <li><a href="#">Articles</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#articles">Articles</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
@@ -40,38 +40,87 @@
     </header>
 <section class="container-fluid content">
     <div class="row">
-        <section class="col-sm-7 col-sm-push-3 main">MAIN</section>
-        <aside class="col-sm-3 col-sm-pull-7 profile">
-            <div class="profile-background" style="background-image: url('@Url.Content("~/images/profile-background.jpg")');"></div>
-            <div class="profile-name clearfix">
-                <div class="profile-initials img-circle pull-left">AB</div>
-                <h3 class="pull-right">Aman Beg</h3>
-            </div>
-            <div class="profile-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur metus purus, volutpat non arcu sed, pulvinar convallis magna. Donec a elit nibh. Donec rhoncus rutrum luctus. Donec vel sapien tempor, ultricies arcu eu, rhoncus augue. Aenean lacinia faucibus commodo. Phasellus eleifend convallis pharetra.
-            </div>
-            <div class="profile-details">
-                <div>
-                    <label>Courses</label>
-                    <p class="form-control-static">10</p>
-                    <input type="text" class="form-control hidden" value="10" />
-                </div>
-                <div>
-                    <label>Articles</label>
-                    <p class="form-control-static">10</p>
-                    <input type="text" class="form-control hidden" value="10" />
-                </div>
-                <div class="row profile-buttons">
-                    <div class="col-sm-6"></div>
-                    <div class="col-sm-6">
-                        <button class="btn btn-block btn-primary">Edit</button>
+        <section class="col-sm-7 col-sm-push-3">
+            <div class="main" style="background-image: url('@Url.Content("~/images/main-background.jpg")');">
+                <a name="courses" class="link-offset"></a>
+                <h2>My Courses</h2>
+                <div class="record">
+                    <div class="record-details">
+                        <a href="#" class="record-title">Front-End Web Development Quick Start With HTML5, CSS, and JavaScript</a>
+                        <div class="record-comment">
+                            I haven't finished this one, but so far it seems interesting. It's nice having a primer on HTML5 and CSS3.
+                        </div>
                     </div>
+                    <div class="record-rating">4.5</div>
 
-                    <div class="col-sm-6">
-                        <button class="btn btn-block btn-danger hidden">Cancel</button>
+                </div>
+                <div class="record">
+                    <div class="record-details">
+                        <a href="#" class="record-title">Front-End Web Development Quick Start With HTML5, CSS, and JavaScript</a>
+                        <div class="record-comment">
+                            I haven't finished this one, but so far it seems interesting. It's nice having a primer on HTML5 and CSS3.
+                        </div>
                     </div>
-                    <div class="col-sm-6">
-                        <button class="btn btn-block btn-primary hidden">Save</button>
+                    <div class="record-rating">4.5</div>
+
+                </div>
+                <a name="articles" class="link-offset"></a>
+                <h2>My Articles</h2>
+                <div class="record">
+                    <div class="record-details">
+                        <a href="#" class="record-title">Front-End Web Development Quick Start With HTML5, CSS, and JavaScript</a>
+                        <div class="record-comment">
+                            I haven't finished this one, but so far it seems interesting. It's nice having a primer on HTML5 and CSS3.
+                        </div>
+                    </div>
+                    <div class="record-rating">4.5</div>
+
+                </div>
+                <div class="record">
+                    <div class="record-details">
+                        <a href="#" class="record-title">Front-End Web Development Quick Start With HTML5, CSS, and JavaScript</a>
+                        <div class="record-comment">
+                            I haven't finished this one, but so far it seems interesting. It's nice having a primer on HTML5 and CSS3.
+                        </div>
+                    </div>
+                    <div class="record-rating">4.5</div>
+
+                </div>
+            </div>
+        </section>
+        <aside class="col-sm-3 col-sm-pull-7">
+            <div class="profile">
+                <div class="profile-background" style="background-image: url('@Url.Content("~/images/profile-background.jpg")');"></div>
+                <div class="profile-name clearfix">
+                    <div class="profile-initials img-circle pull-left">AB</div>
+                    <h3 class="pull-right">Aman Beg</h3>
+                </div>
+                <div class="profile-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur metus purus, volutpat non arcu sed, pulvinar convallis magna. Donec a elit nibh. Donec rhoncus rutrum luctus. Donec vel sapien tempor, ultricies arcu eu, rhoncus augue. Aenean lacinia faucibus commodo. Phasellus eleifend convallis pharetra.
+                </div>
+                <div class="profile-details">
+                    <div>
+                        <label>Courses</label>
+                        <p class="form-control-static">10</p>
+                        <input type="text" class="form-control hidden" value="10" />
+                    </div>
+                    <div>
+                        <label>Articles</label>
+                        <p class="form-control-static">10</p>
+                        <input type="text" class="form-control hidden" value="10" />
+                    </div>
+                    <div class="row profile-buttons">
+                        <div class="col-sm-6"></div>
+                        <div class="col-sm-6">
+                            <button class="btn btn-block btn-primary">Edit</button>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <button class="btn btn-block btn-danger hidden">Cancel</button>
+                        </div>
+                        <div class="col-sm-6">
+                            <button class="btn btn-block btn-primary hidden">Save</button>
+                        </div>
                     </div>
                 </div>
             </div>
