@@ -1,0 +1,85 @@
+﻿body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar.navbar-inverse {
+    background-color: #00008b;
+    border-width: 0;
+    border-radius: 0;
+}
+header, footer {
+    background-color: #00008b;
+    padding: 20px;
+    color: #fff;
+}
+.navbar-inverse .navbar-brand {
+    color: #d2d2d2;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #d2d2d2;
+}
+.content {
+    padding: 20px;
+}
+
+/* FRIENDS */
+.friend {
+    border: solid 1px #a2a2a2;
+    box-shadow: 4px 4px 5px #c2c2c2;
+    padding: 4px;
+    margin-bottom: 12px;
+}
+.friend-initials {
+    background-color: #2e8b57;
+    border: solid 1px #2e8b57;
+    color: #fff;
+    width: 40px;
+    text-align: center;
+    height: 40px;
+    padding-top: 5px;
+    font-size: larger;
+    font-weight: bold;
+}
+.friend-details {
+    padding: 4px 0;
+}
+
+
+/* PROFILE */
+.profile {
+    border: solid 1px #a2a2a2;
+    box-shadow: 4px 4px 5px #c2c2c2;
+    padding: 4px;
+    margin-bottom: 12px;
+}
+.profile-background {
+    height: 140px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+        margin-top: -4px;
+    margin-left: -4px;
+    margin-right: -4px;
+}
+.profile-initials {
+    background-color: #2e8b57;
+    border: solid 1px #2e8b57;
+    color: #fff;
+    width: 60px;
+    text-align: center;
+    height: 60px;
+    font-size: x-large;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.profile-name {
+    margin-top: -30px;
+}
+.profile-name > h3 {
+    padding-right: 20px;
+    padding-top: 8px;
+}
+.profile-description {
+    font-size: smaller;
+    margin-bottom: 8px;
+}
