@@ -50,7 +50,11 @@ header, footer {
 .friend-details {
     padding: 4px 0;
 }
-
+.friend h4 {
+    font-size: large;
+    width: 130px;
+    text-align: right;
+}
 
 /* PROFILE */
 .profile {

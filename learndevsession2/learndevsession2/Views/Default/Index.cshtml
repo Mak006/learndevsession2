@@ -38,121 +38,47 @@
             </div><!-- /.container-fluid -->
         </nav>
     </header>
-<section class="container-fluid content">
-    <div class="row">
-        <section class="col-sm-7 col-sm-push-3">
-            <div class="main" style="background-image: url('@Url.Content("~/images/main-background.jpg")');">
-                <a name="courses" class="link-offset"></a>
-                <h2>My Courses</h2>
-                <div class="record">
-                    <div class="record-details">
-                        <a href="#" class="record-title">Front-End Web Development Quick Start With HTML5, CSS, and JavaScript</a>
-                        <div class="record-comment">
-                            I haven't finished this one, but so far it seems interesting. It's nice having a primer on HTML5 and CSS3.
-                        </div>
-                    </div>
-                    <div class="record-rating">4.5</div>
+    <section class="container-fluid content">
+        <div class="row">
+            <section class="col-md-7 col-md-push-3">
+                <div class="main" style="background-image: url('@Url.Content("~/images/main-background.jpg")');">
+                    <a name="courses" class="link-offset"></a>
+                    <h2>My Courses</h2>
+                    <div id="coursesNode"></div>
 
+                    <a name="articles" class="link-offset"></a>
+                    <h2>My Articles</h2>
+                    <div id="articlesNode"></div>
                 </div>
-                <div class="record">
-                    <div class="record-details">
-                        <a href="#" class="record-title">Front-End Web Development Quick Start With HTML5, CSS, and JavaScript</a>
-                        <div class="record-comment">
-                            I haven't finished this one, but so far it seems interesting. It's nice having a primer on HTML5 and CSS3.
-                        </div>
+            </section>
+            <aside class="col-md-3 col-md-pull-7">
+                <div class="profile">
+                    <div class="profile-background" style="background-image: url('@Url.Content("~/images/profile-background.jpg")');"></div>
+                    <div class="profile-name clearfix">
+                        <div class="profile-initials img-circle pull-left">AB</div>
+                        <h3 class="pull-right">Aman Beg</h3>
                     </div>
-                    <div class="record-rating">4.5</div>
-
-                </div>
-                <a name="articles" class="link-offset"></a>
-                <h2>My Articles</h2>
-                <div class="record">
-                    <div class="record-details">
-                        <a href="#" class="record-title">Front-End Web Development Quick Start With HTML5, CSS, and JavaScript</a>
-                        <div class="record-comment">
-                            I haven't finished this one, but so far it seems interesting. It's nice having a primer on HTML5 and CSS3.
-                        </div>
+                    <div class="profile-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur metus purus, volutpat non arcu sed, pulvinar convallis magna. Donec a elit nibh. Donec rhoncus rutrum luctus. Donec vel sapien tempor, ultricies arcu eu, rhoncus augue. Aenean lacinia faucibus commodo. Phasellus eleifend convallis pharetra.
                     </div>
-                    <div class="record-rating">4.5</div>
-
+                    <div id="profileNode"></div>
                 </div>
-                <div class="record">
-                    <div class="record-details">
-                        <a href="#" class="record-title">Front-End Web Development Quick Start With HTML5, CSS, and JavaScript</a>
-                        <div class="record-comment">
-                            I haven't finished this one, but so far it seems interesting. It's nice having a primer on HTML5 and CSS3.
-                        </div>
-                    </div>
-                    <div class="record-rating">4.5</div>
-
-                </div>
-            </div>
-        </section>
-        <aside class="col-sm-3 col-sm-pull-7">
-            <div class="profile">
-                <div class="profile-background" style="background-image: url('@Url.Content("~/images/profile-background.jpg")');"></div>
-                <div class="profile-name clearfix">
-                    <div class="profile-initials img-circle pull-left">AB</div>
-                    <h3 class="pull-right">Aman Beg</h3>
-                </div>
-                <div class="profile-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur metus purus, volutpat non arcu sed, pulvinar convallis magna. Donec a elit nibh. Donec rhoncus rutrum luctus. Donec vel sapien tempor, ultricies arcu eu, rhoncus augue. Aenean lacinia faucibus commodo. Phasellus eleifend convallis pharetra.
-                </div>
-                <div class="profile-details">
-                    <div>
-                        <label>Courses</label>
-                        <p class="form-control-static">10</p>
-                        <input type="text" class="form-control hidden" value="10" />
-                    </div>
-                    <div>
-                        <label>Articles</label>
-                        <p class="form-control-static">10</p>
-                        <input type="text" class="form-control hidden" value="10" />
-                    </div>
-                    <div class="row profile-buttons">
-                        <div class="col-sm-6"></div>
-                        <div class="col-sm-6">
-                            <button class="btn btn-block btn-primary">Edit</button>
-                        </div>
-
-                        <div class="col-sm-6">
-                            <button class="btn btn-block btn-danger hidden">Cancel</button>
-                        </div>
-                        <div class="col-sm-6">
-                            <button class="btn btn-block btn-primary hidden">Save</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </aside>
-        <aside class="col-sm-2 friends">
-            <div class="friend clearfix">
-                <div class="clearfix">
-                    <div class="friend-initials img-circle pull-left">HS</div>
-                    <h4 class="pull-right">Homer Simpson</h4>
-                </div>
-                <div class="friend-details">
-                    <div class="pull-right">10 courses taken</div>
-                    <div class="pull-right">11 articles reviewed</div>
-                </div>
-            </div>
-            <div class="friend clearfix">
-                <div class="clearfix">
-                    <div class="friend-initials img-circle pull-left">HS</div>
-                    <h4 class="pull-right">Homer Simpson</h4>
-                </div>
-                <div class="friend-details">
-                    <div class="pull-right">10 courses taken</div>
-                    <div class="pull-right">11 articles reviewed</div>
-                </div>
-            </div>
-        </aside>
-    </div>
-</section>
+            </aside>
+            <aside class="col-md-2 friends">
+                <div id="friendsNode"></div>
+            </aside>
+        </div>
+    </section>
     <footer class="container-fluid">
         &copy; Copyright 2016
     </footer>
     <script src="~/scripts/jquery-1.9.1.min.js"></script>
     <script src="~/scripts/bootstrap.min.js"></script>
+    <script src="https://fb.me/react-0.14.7.js"></script>
+    <script src="https://fb.me/react-dom-0.14.7.js"></script>
+    <script type="text/javascript" src="~/scripts/app/friends.js"></script>
+    <script type="text/javascript" src="~/scripts/app/items.js"></script>
+    <script type="text/javascript" src="~/scripts/app/profile.js"></script>
+
 </body>
 </html>
