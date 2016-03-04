@@ -2,7 +2,7 @@
 // for more information see the following page on the TypeScript wiki:
 // https://github.com/Microsoft/TypeScript/wiki/JSX
 
-interface IProfileDetailsProps {
+export interface IProfileDetailsProps {
     isReadOnly: boolean,
     coursesCount: number,
     articlesCount: number,
@@ -10,7 +10,7 @@ interface IProfileDetailsProps {
     coursesOnChange(e: React.FormEvent)
 }
 
-class ProfileDetails extends React.Component<IProfileDetailsProps, {}> {
+export class ProfileDetails extends React.Component<IProfileDetailsProps, {}> {
     render() {
         let inputClass = " hidden";
         let pClass = "";
@@ -35,7 +35,7 @@ class ProfileDetails extends React.Component<IProfileDetailsProps, {}> {
     }
 }
 
-interface IProfileButtonsProps {
+export interface IProfileButtonsProps {
     isReadOnly: boolean,
     editClick(e: React.MouseEvent),
     saveClick(e: React.MouseEvent),
@@ -43,7 +43,7 @@ interface IProfileButtonsProps {
 
 }
 
-class ProfileButtons extends React.Component<IProfileButtonsProps, {}> {
+export class ProfileButtons extends React.Component<IProfileButtonsProps, {}> {
     render() {
         let editClass = "";
         let saveCancelClass = " hidden";
@@ -69,24 +69,30 @@ class ProfileButtons extends React.Component<IProfileButtonsProps, {}> {
     }
 }
 
-interface IProfileProps {
+export interface IProfileProps {
     initialCoursesCount: number,
     initialArticlesCount: number    
 }
 
-interface IProfileState {
+export interface IProfileState {
     isReadOnly?: boolean,
     coursesCount?: number,
     articlesCount?: number
 }
 
-class Profile extends React.Component<IProfileProps, IProfileState> {
+export class Profile extends React.Component<IProfileProps, IProfileState> {
     private intermArticlesCount: number;
     private intermCoursesCount: number;
-    state = {
-        isReadOnly: true,
-        coursesCount: this.props.initialCoursesCount,
-        articlesCount: this.props.initialArticlesCount
+    constructor(props) {
+        super(props);
+        this.state = {
+            isReadOnly: true,
+            coursesCount: this.props.initialCoursesCount,
+            articlesCount: this.props.initialArticlesCount            
+        }
+        this.intermArticlesCount = this.props.initialArticlesCount;
+        this.intermCoursesCount = this.props.initialCoursesCount;
+        
     }
     editClickHandler(e: React.MouseEvent) {
         this.setState({
@@ -125,5 +131,3 @@ class Profile extends React.Component<IProfileProps, IProfileState> {
     }
 
 }
-
-ReactDOM.render(<Profile initialArticlesCount={10} initialCoursesCount={20} />, document.getElementById("profileNode"));

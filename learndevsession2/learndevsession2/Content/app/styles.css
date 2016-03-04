@@ -6,6 +6,11 @@
     background-color: #00008b;
     border-width: 0;
     border-radius: 0;
+    padding: 30px 0;
+    transition: padding 0.5s;
+}
+.navbar.navbar-inverse.scrolled {
+    padding: 0 0;    
 }
 .nav .navbar-nav .navbar-right {
     padding-right: 20px;
@@ -23,9 +28,10 @@ header, footer {
 }
 .content {
     padding: 20px;
+    margin-top: 60px;
 }
 .link-offset {
-    top: -50px;
+    top: -110px;
     display: block;
     position: relative;
 }
